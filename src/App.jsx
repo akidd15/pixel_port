@@ -2,18 +2,18 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './assets/styles/App.css'
-import './components/footer'
-import './components/header'
-import './components/homepage'
-
+import card from './components/card';
+import footer from './components/footer';
+import header from './components/header';
 
 function App() {
 
   return (
   <div>
-    <homepage.jsx />
-    <Header />
-    <Footer />
+    <card.jsx />
+    <header.jsx />
+    <footer.jsx />
+    <navbar.jsx />
   </div>
 
 );
