@@ -1,22 +1,32 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react';
+
 import './assets/styles/App.css'
-import card from './components/card';
-import footer from './components/footer';
-import header from './components/header';
+import Nav from './components/Nav'
+import Header from './components/Header';
+import Card from './components/Card';
+import Project from './components/Project';
+import Footer from './components/footer';
+
+
+
 
 function App() {
 
   return (
   <div>
-    <card.jsx />
-    <header.jsx />
-    <footer.jsx />
-    <navbar.jsx />
+
+    <Nav />
+    <Header />
+    <Card />
+    <Project />
+    <Footer />
+
+    
+    
   </div>
 
 );
 }
 
-export default App
+export default App;
