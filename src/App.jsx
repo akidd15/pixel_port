@@ -1,11 +1,13 @@
-import { useState } from 'react'
+
 import React from 'react';
-import './assets/styles/App.css'
-import Nav from './components/Nav';
-import Header from './components/Header';
-import Card from './components/Card';
-import Project from './components/Project';
-import Footer from './components/footer';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import NavbarComponent from './components/NavbarComponent';
+import AboutMe from './pages/AboutMe';
+import Contact from './pages/Contact';
+import Resume from './pages/Resume';
+import Portfolio from './pages/Portfolio';
+import './assets/styles/Nav.css';
+
 
 
 
@@ -13,19 +15,19 @@ import Footer from './components/footer';
 function App() {
 
   return (
-  <div>
-
-    <Nav />
-    <Header />
-    <Card />
-    <Project />
-    <Footer />
-
-    
-    
-  </div>
-
-);
+<Router>
+      <NavbarComponent />
+      <Switch>
+        <Route path="/" exact component={AboutMe} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/resume" component={Resume} />
+        <Route path="/portfolio" component={Portfolio} />
+      </Switch>
+    </Router>
+  );
 }
+
+
+
 
 export default App;
