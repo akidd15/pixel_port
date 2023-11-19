@@ -1,0 +1,19 @@
+/* styles.css (or your preferred CSS file) */
+
+.nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #ffcc00; /* Change the color on hover as desired */
+  }
+  
