@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     name: '',
     email: '',
     message: '',
-  });
+  };
 
-  const [validationMessages, setValidationMessages] = useState({
+  const initialValidationMessages = {
     name: '',
     email: '',
     message: '',
-  });
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
+  const [validationMessages, setValidationMessages] = useState(
+    initialValidationMessages
+  );
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const validateField = (fieldName, value) => {
     // Validation logic for each field
@@ -51,12 +57,38 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Additional logic for submitting the form, if needed
+
+    // Check if the form is valid before proceeding
+    if (isFormValid()) {
+      // Access the form data from the state
+      console.log('Form Data:', formData);
+
+      // Clear the form and show the submission notification
+      setFormData(initialFormData);
+      setValidationMessages(initialValidationMessages);
+      setFormSubmitted(true);
+    } else {
+      console.log('Form is not valid. Please correct the errors.');
+    }
+  };
+
+  const isFormValid = () => {
+    // Check if all validation messages are empty
+    return (
+      validationMessages.name === '' &&
+      validationMessages.email === '' &&
+      validationMessages.message === ''
+    );
   };
 
   return (
     <div>
       <h2>Contact</h2>
+      {formSubmitted && (
+        <div className="submission-notification">
+          Form submitted successfully!
+        </div>
+      )}
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
