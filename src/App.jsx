@@ -7,6 +7,7 @@ import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Footer from './componentsFooter';
 import './assets/styles/Nav.css';
 import './assets/styles/Resume.css';
 
