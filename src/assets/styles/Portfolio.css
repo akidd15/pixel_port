@@ -1,0 +1,34 @@
+/* Add or modify styles in your CSS file */
+.project-image-container {
+    max-width: 400px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+   padding-right: 15%;
+  }
+  
+  .project-image {
+    max-width: 150%; /* Set a maximum width for the image */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any default spacing or alignment issues */
+    align-content: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .project-links {
+    margin-top: 20px; 
+    margin-left: 230px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: block;
+    
+  }
+
+  .project-title {
+    margin-top: 20px; 
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: block;
+  }
+  
+  

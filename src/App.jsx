@@ -23,6 +23,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/portfolio" element={<Portfolio/>} />
         </Routes>
+        
 
         <Footer />
     </Router>

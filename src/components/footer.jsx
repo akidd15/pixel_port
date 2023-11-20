@@ -19,7 +19,13 @@ const Footer = () => {
         >
           LinkedIn
         </a>
-        {/* Add more platform links as needed */}
+        <a
+          href="https://www.instagram.com/koachkidd/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
       </div>
     </footer>
   );
