@@ -1,37 +1,28 @@
 import React from 'react';
+import '../assets/styles/Resume.css';
 
 const Resume = () => {
-  const proficiencyList = [
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'HTML',
-    'CSS',
-    'Git',
-    'SQL',
-    'RESTful APIs',
-    // Add more proficiencies as needed
-  ];
-
+  const resumeUrl = 'https://drive.google.com/file/d/1gyS_N90e5mIkMBZf6RPUSRM4DysU3j0n/view?usp=sharing'
   return (
     <div>
-      <h2>Resume</h2>
+      <h2>Proficiencies</h2>
+      <ul className="proficiency-list">
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        {/* Add more proficiencies as needed */}
+      </ul>
       <p>
         Download my resume:{' '}
         <a
-          href="/path/to/your/resume.pdf"
+          href={resumeUrl}
           target="_blank"
           rel="noopener noreferrer"
         >
           Resume.pdf
         </a>
       </p>
-      <h3>Proficiencies</h3>
-      <ul>
-        {proficiencyList.map((proficiency, index) => (
-          <li key={index}>{proficiency}</li>
-        ))}
-      </ul>
     </div>
   );
 };

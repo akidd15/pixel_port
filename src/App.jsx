@@ -8,6 +8,7 @@ import Portfolio from './pages/Portfolio';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import './assets/styles/Nav.css';
+import './assets/styles/Resume.css';
 
 
 function App() {
