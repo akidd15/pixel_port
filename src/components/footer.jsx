@@ -1,11 +1,28 @@
-import React from "react";
-
-function Footer () {
-    return (
-        <div className="footer">
-            <h2>Allison Kidd</h2>
-        </div>
-    );
+import React from 'react';
+import '../assets/styles/Footer.css'
+const Footer = () => {
+  return (
+    <footer>
+      <h3>Connect with Me</h3>
+      <div>
+        <a
+          href="https://github.com/akidd15"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/allison-kidd-65601b224/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        {/* Add more platform links as needed */}
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

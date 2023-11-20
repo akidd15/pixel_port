@@ -1,33 +1,32 @@
-
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavbarComponent from './components/NavbarComponent';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import './assets/styles/Nav.css';
 
 
-
-
-
 function App() {
-
   return (
-<Router>
+    <Router>
       <NavbarComponent />
-      <Switch>
-        <Route path="/" exact component={AboutMe} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/resume" component={Resume} />
-        <Route path="/portfolio" component={Portfolio} />
-      </Switch>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<AboutMe />} />
+        <Route path="/contact" element={<Contact />} /> 
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/portfolio" element={<Portfolio/>} />
+        </Routes>
+
+        <Footer />
     </Router>
   );
 }
 
-
-
-
 export default App;
+

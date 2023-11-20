@@ -1,0 +1,26 @@
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin:0;
+}
+
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #79ADDC;
+    justify-content: center;
+}
+
+footer a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: black;
+    
+    
+}

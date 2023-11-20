@@ -1,0 +1,23 @@
+h2 {
+    color:#14213D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+ 
+p {
+    border: 2px solid #ddd; /* Choose a border color */
+    padding: 50px; /* Add padding for spacing */
+    border-radius: 155px; /* Optional: Add rounded corners */
+    transition: background-color 1s ease;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  
+  p:hover {
+    background-color: #f3f3f3;
+
+  }
+
+body {
+    background-color: rgb(204, 231, 240);
+}

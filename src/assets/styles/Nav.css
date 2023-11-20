@@ -1,19 +1,32 @@
-/* styles.css (or your preferred CSS file) */
-
-.nav {
-    background-color: #333;
-    color: white;
+body {
+  margin: 0;
+ 
+}
+.navbar {
+    background-color: #94ECBE;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: center;
+    background: radial-gradient(ellipse, #79ADDC, #14213D);
+    height: 120px;
+   
   }
-  
-  
-  a {
+
+  .navbar a {
+    justify-content: center;
+    padding-right: 100px;
+    padding-left: 145px;
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   a:hover {
-    color: #ffcc00; /* Change the color on hover as desired */
+    color: black; /* Change the color on hover as desired */
+    transition: .6s ease-in-out;
   }
+
   

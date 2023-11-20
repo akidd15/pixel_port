@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import '../assets/styles/Nav.css';
 import Navbar from '../UI/Navbar';
 function NavbarComponent () {
+    console.log("NavbarComponent rendered")
     return (
      <Navbar links={[
         <Link key={1} 
