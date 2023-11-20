@@ -6,9 +6,9 @@
   }
   
   .project-image {
-    max-width: 150%; /* Set a maximum width for the image */
-    height: auto; /* Maintain the aspect ratio */
-    display: block; /* Remove any default spacing or alignment issues */
+    max-width: 150%; 
+    height: auto; 
+    display: block; 
     align-content: center;
     margin: 0px;
     padding: 0px;

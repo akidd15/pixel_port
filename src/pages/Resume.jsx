@@ -11,6 +11,14 @@ const Resume = () => {
         <li>React</li>
         <li>HTML</li>
         <li>CSS</li>
+        <li>MongoDB</li>
+        <li>SQL</li>
+        <li>NOSQL</li>
+        <li>Express.js</li>
+        <li>Node.js</li>
+        <li>GraphQL</li>
+        <li>API's</li>
+        
         {/* Add more proficiencies as needed */}
       </ul>
       <p>
