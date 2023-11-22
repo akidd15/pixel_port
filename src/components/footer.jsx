@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/Footer.css'
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer>
       <h3>Connect with Me</h3>
@@ -31,4 +31,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+

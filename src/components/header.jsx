@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/styles/Header.css';
 
-function Header() {
+export const Header = () => {
     return (
         <header className="header">
             <h1> Allison Kidd </h1>
@@ -9,4 +9,4 @@ function Header() {
     );
     }
 
-    export default Header;
+  

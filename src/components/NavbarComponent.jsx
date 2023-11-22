@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import '../assets/styles/Nav.css';
 import Navbar from '../UI/Navbar';
-function NavbarComponent () {
+export const NavbarComponent = () => {
     console.log("NavbarComponent rendered")
     return (
      <Navbar links={[
@@ -28,4 +28,3 @@ function NavbarComponent () {
     );
 };
 
-export default NavbarComponent;
